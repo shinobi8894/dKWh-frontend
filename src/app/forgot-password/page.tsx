@@ -123,7 +123,7 @@ export default function ForgotPasswordPage() {
                 </h1>
 
                 <p className="text-slate-600 mb-8" style={{ fontFamily: "var(--font-sans)", fontWeight: 400 }}>
-                  We&apos;ve sent password reset instructions to <span className="font-medium text-slate-900">{email}</span>
+                  We have sent password reset instructions to <span className="font-medium text-slate-900">{email}</span>. Click the link in the email to set a new password.
                 </p>
 
                 <div className="bg-blue-50 rounded-2xl p-6 mb-6">

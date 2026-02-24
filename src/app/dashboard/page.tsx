@@ -16,13 +16,22 @@ export default function DashboardPage() {
               DTR Platform
             </span>
           </Link>
-          <Link
-            href="/login"
-            className="text-sm text-slate-600 hover:text-slate-900 font-medium"
-            style={{ fontFamily: "var(--font-sans)" }}
-          >
-            Sign out
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/change-password"
+              className="text-sm text-slate-600 hover:text-slate-900 font-medium"
+              style={{ fontFamily: "var(--font-sans)" }}
+            >
+              Change password
+            </Link>
+            <Link
+              href="/login"
+              className="text-sm text-slate-600 hover:text-slate-900 font-medium"
+              style={{ fontFamily: "var(--font-sans)" }}
+            >
+              Sign out
+            </Link>
+          </div>
         </div>
       </header>
       <main className="flex-1 flex items-center justify-center p-6">

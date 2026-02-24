@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { Zap, Shield, Activity, Lock, TrendingUp } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function SignupPage() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,6 +18,7 @@ export default function SignupPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Signup submitted:", formData);
+    router.push(`/confirm-email?email=${encodeURIComponent(formData.email)}`);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
